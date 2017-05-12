@@ -9,6 +9,11 @@
 import UIKit
 
 class TodoListTableTableViewController: UITableViewController {
+    
+    
+    @IBAction func unwindToList(segue: UIStoryboardSegue){
+        print("unwinding")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +40,6 @@ class TodoListTableTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
-    
-    @IBAction func unwindToList(segue: UIStoryboardSegue){
-        print("Unwinding")
     }
 
     /*
