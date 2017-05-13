@@ -16,6 +16,7 @@
 		A95060251EC30B6F00715736 /* TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95060241EC30B6F00715736 /* TodoUITests.swift */; };
 		A9CD1E481EC605E100A44F19 /* AddTodoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1E471EC605E100A44F19 /* AddTodoItemViewController.swift */; };
 		A9CD1E4E1EC60F8E00A44F19 /* TodoListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1E4D1EC60F8E00A44F19 /* TodoListTableTableViewController.swift */; };
+		A9CD1E501EC7618900A44F19 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1E4F1EC7618900A44F19 /* TodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A95060261EC30B6F00715736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CD1E471EC605E100A44F19 /* AddTodoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoItemViewController.swift; sourceTree = "<group>"; };
 		A9CD1E4D1EC60F8E00A44F19 /* TodoListTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListTableTableViewController.swift; sourceTree = "<group>"; };
+		A9CD1E4F1EC7618900A44F19 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				A95060041EC30B6F00715736 /* AppDelegate.swift */,
 				A95060061EC30B6F00715736 /* ViewController.swift */,
 				A95060081EC30B6F00715736 /* Main.storyboard */,
+				A9CD1E4F1EC7618900A44F19 /* TodoItem.swift */,
 				A9CD1E471EC605E100A44F19 /* AddTodoItemViewController.swift */,
 				A950600B1EC30B6F00715736 /* Assets.xcassets */,
 				A950600D1EC30B6F00715736 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CD1E501EC7618900A44F19 /* TodoItem.swift in Sources */,
 				A95060071EC30B6F00715736 /* ViewController.swift in Sources */,
 				A95060051EC30B6F00715736 /* AppDelegate.swift in Sources */,
 				A9CD1E4E1EC60F8E00A44F19 /* TodoListTableTableViewController.swift in Sources */,
