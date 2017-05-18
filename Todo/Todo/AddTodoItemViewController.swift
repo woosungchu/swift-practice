@@ -9,7 +9,18 @@
 import UIKit
 
 class AddTodoItemViewController: UIViewController {
+    
+    var todoItem: TodoItem = TodoItem(itemName: "")
 
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var textField: UITextField!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if(self.textField.text != ""){
+            self.todoItem = TodoItem(itemName: self.textField.text!)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

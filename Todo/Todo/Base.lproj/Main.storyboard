@@ -44,10 +44,14 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="aLS-OK-xbI">
                             <connections>
-                                <segue destination="OO6-DI-Ffu" kind="unwind" unwindAction="unwindToListWithSegue:" id="zpE-4Q-vQA"/>
+                                <segue destination="OO6-DI-Ffu" kind="unwind" unwindAction="unwindAndAddToListWithSegue:" id="630-nW-AtZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="aLS-OK-xbI" id="AXj-t8-Qy9"/>
+                        <outlet property="textField" destination="iiC-pP-Ejw" id="mgQ-g9-oI9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="OO6-DI-Ffu" userLabel="Exit" sceneMemberID="exit"/>

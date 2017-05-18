@@ -12,6 +12,15 @@ class TodoListTableTableViewController: UITableViewController {
     
     var todoItems: [TodoItem] = []
     
+    @IBAction func unwindAndAddToList(segue: UIStoryboardSegue){
+        let source = segue.source as! AddTodoItemViewController
+        let todoItem:TodoItem = source.todoItem
+        
+        if todoItem.itemName != ""{
+            self.todoItems.append(todoItem)
+            self.tableView.reloadData()
+        }
+    }
     
     @IBAction func unwindToList(segue: UIStoryboardSegue){
         print("unwinding")
