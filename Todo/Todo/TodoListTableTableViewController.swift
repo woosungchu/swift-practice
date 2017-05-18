@@ -51,7 +51,23 @@ class TodoListTableTableViewController: UITableViewController {
         
         cell.textLabel?.text = todoItem.itemName
         
+        if(todoItem.completed){
+            cell.accessoryType = UITableViewCellAccessoryType.checkmark;
+        } else {
+            cell.accessoryType = UITableViewCellAccessoryType.none;
+        }
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        let tappedItem = todoItems[indexPath.row] as TodoItem
+        tappedItem.completed = !tappedItem.completed
+        
+        tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
+        
     }
 
     /*
